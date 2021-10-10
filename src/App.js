@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import SimpleShowHide from './testing-dasar/03-SimpleShowHide';
+import CompVariant from './testing-dasar/05-CompVariant';
+import UserEvent from './testing-dasar/06-CompUserEvent';
+import CompAxios from './testing-dasar/07-CompAxios';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <>
+        {/* <SampleCompRTL /> */}
+        <SimpleShowHide />
+        <CompVariant />
+        <UserEvent />
+        <CompAxios />
+      </>
     </div>
   );
 }
